@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brown Rice Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Premium Brown Rice</h1>
+    </header>
+    <main>
+        <div class="product">
+            <h2>Organic Brown Rice</h2>
+            <img src="1.jpg" alt="Brown Rice">
+            <div class="product-options">
+                <div class="option">
+                    <h3>5kg Pack</h3>
+                    <p>400 PKR</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="number" value="0" min="0" data-price="400" data-size="5">
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h3>10kg Pack</h3>
+                    <p>700 PKR</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="number" value="0" min="0" data-price="700" data-size="10">
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="total">0.00</span> PKR</p>
+            <button id="checkout">Proceed to Checkout</button>
+        </div>
+    </main>
+    
+    <div class="image-slider">
+        <h2>Our Rice Fields</h2>
+        <div class="slider-container">
+            <button class="slider-btn prev">&lt;</button>
+            <button class="slider-btn next">&gt;</button>
+            <div class="slider">
+                <img src="1.jpg" alt="Rice Field 1">
+                <img src="2.jpg" alt="Rice Field 2">
+                <img src="3.jpg" alt="Rice Field 3">
+                <img src="4.jpg" alt="Rice Field 4">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Phone: +92 300 1234567</p>
+                <p>Email: info@almeerajriceandfoods.com</p>
+            </div>
+            <div class="address">
+                <h3>Almeeraj Rice and Foods</h3>
+                <p>123 Rice Street, Grain District</p>
+                <p>Lahore, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
